@@ -21,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/premily/hapi-typescript-plugin/issues"
   },
-  "homepage": "https://github.com/premily/hapi-typescript-plugin"
+  "homepage": "https://github.com/premily/hapi-typescript-plugin",
+  "peerDependencies": {
+    "hapi": ">=8.x.x"
+  },
+  "devDependencies": {
+    "code": "1.x.x",
+    "hapi": "8.x.x",
+    "lab": "5.x.x"
+  },
 }
