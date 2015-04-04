@@ -1,13 +1,18 @@
+export interface IRegister {
+    (server, options, next): void;
+    attributes:any;
+}
+
 export default
 class Plugin {
-    register:any;
+    register:IRegister;
     constructor() {
         this.register.attributes = {
             name: 'plugin',
             version: '0.1.0'
         };
     }
-    public register = (server, options, next) => {
+    register = (server, options, next) => {
         server.bind(this);
         this._register(server, options);
         next();
