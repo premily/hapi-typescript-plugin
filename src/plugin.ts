@@ -11,7 +11,7 @@ class Plugin {
             version: '0.1.0'
         };
     }
-    register:IRegister = (server?, options, next) => {
+    register:IRegister = (server, options, next) => {
         server.bind(this);
         this._register(server, options);
         next();
