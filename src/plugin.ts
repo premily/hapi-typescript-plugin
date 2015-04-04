@@ -11,7 +11,7 @@ class Plugin {
         server.bind(this);
         this._register(server, options);
         next();
-    }
+    };
     private _register(server, options) {
         // Register
         return 'register';
