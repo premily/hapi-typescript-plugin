@@ -1,4 +1,5 @@
-export default class Plugin {
+export default
+class Plugin {
     constructor() {
 
     }
