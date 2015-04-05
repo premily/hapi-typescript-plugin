@@ -13,9 +13,9 @@ describe('Plugin', function () {
     it('should work', function (done) {
         var server = new Hapi.Server();
         var plugin = new Plugin();
-        server.connection({ host: 'localhost', port: 80 });
+        server.connection({host: 'localhost', port: 80});
 
-        server.register(plugin, function(err) {
+        server.register(plugin, function (err) {
             expect(err).to.not.exist();
             expect(plugin._register).to.be.a.function();
             expect(plugin._register()).to.be.a.string();
